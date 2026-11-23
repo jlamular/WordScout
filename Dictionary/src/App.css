@@ -1,0 +1,214 @@
+
+.app {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 55px 30px;
+}
+
+.header {
+  margin-bottom: 45px;
+}
+
+.brand {
+  font-size: 36px;
+  font-weight: 850;
+  letter-spacing: -2px;
+  color: #24213a;
+}
+
+.brand span {
+  color: #7257e8;
+}
+
+.header p {
+  color: #89869a;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 25px;
+  align-items: stretch;
+}
+
+.dictionary-card,
+.daily-card {
+  border-radius: 20px;
+  padding: 32px;
+  min-width: 0;
+}
+
+.dictionary-card {
+  background: white;
+  border: 1px solid #eae8f1;
+  box-shadow: 0 8px 30px rgba(40, 30, 80, 0.04);
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #7257e8;
+  background: #eeeaff;
+  padding: 7px 11px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.section-heading h2,
+.daily-card h2 {
+  font-size: 25px;
+  font-weight: 750;
+  color: #24213a;
+  margin-bottom: 7px;
+}
+
+.section-heading p,
+.daily-subtitle {
+  color: #89869a;
+  font-size: 14px;
+}
+
+/* Dictionary elements */
+
+.dictionary-card input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e5e2ef;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  background: #faf9fd;
+  transition: 0.2s;
+}
+
+.dictionary-card input:focus {
+  border-color: #7257e8;
+  box-shadow: 0 0 0 3px #eeeaff;
+}
+
+.dictionary-card button {
+  padding: 13px 22px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 10px;
+  background: #7257e8;
+  color: white;
+  font-weight: 650;
+  transition: 0.2s;
+}
+
+.dictionary-card button:hover {
+  background: #5b43c9;
+}
+
+.dictionary-card h1,
+.dictionary-card h2,
+.dictionary-card h3 {
+  color: #292541;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 750;
+}
+
+.dictionary-card p {
+  color: #777389;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* Word of the Day */
+
+.daily-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #7257e8, #9a82f5);
+  color: white;
+  box-shadow: 0 12px 30px rgba(114, 87, 232, 0.16);
+}
+
+.daily-card .tag {
+  color: white;
+  background: rgba(255, 255, 255, 0.17);
+}
+
+.daily-card h2 {
+  color: white;
+}
+
+.daily-subtitle {
+  color: #e6dfff;
+}
+
+.daily-result {
+  position: relative;
+  z-index: 1;
+  margin-top: 45px;
+}
+
+.daily-result h1,
+.daily-result h2,
+.daily-result h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  overflow-wrap: anywhere;
+}
+
+.daily-result p {
+  color: #f0ecff;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.daily-decoration {
+  position: absolute;
+  right: 20px;
+  bottom: -45px;
+  font-size: 170px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.09);
+  pointer-events: none;
+}
+
+/* footer {
+  margin-top: 60px;
+  padding-top: 25px;
+  border-top: 1px solid #eae8f1;
+  text-align: center;
+  color: #aaa6b8;
+  font-size: 13px;
+} */
+
+@media (max-width: 768px) {
+  .app {
+    padding: 35px 18px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .dictionary-card,
+  .daily-card {
+    padding: 25px;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+
+  .brand {
+    font-size: 30px;
+  }
+}
